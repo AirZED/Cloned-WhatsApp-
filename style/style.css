@@ -1,0 +1,169 @@
+
+
+
+:root{
+    --border:.5px solid white;
+    --text-color: white;
+    --icons-color: rgb(130 150 160 );
+    --some-icons: rgb(35 49 56);
+    --body-color: rgb(17 27 33);
+    --header-color: rgb(0 168 132);  
+}
+
+*{
+
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 600;
+
+}
+
+html::-webkit-scrollbar{
+    width: .6rem;
+    color: var(--icons-color);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--text-color);
+    border-radius: .3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+body{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: var(--body-color);
+}
+
+
+.web-layout{
+    padding: 0rem 0rem;
+    display: grid;
+    grid-template-columns: .86fr 2fr;
+}
+
+.message-box{
+    background-color: var(--body-color);
+}
+
+.parent-div{
+    display: grid;
+    block-size: 100vh;
+    grid-template-rows: auto 1fr;
+    
+}
+
+/* .parent-div .header{
+    display: block;
+    box-shadow: rem 9rem 10rem black;
+    width: auto;
+} */
+
+.parent-div .header .top-nav{
+    background-color:   var(--some-icons) ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+.parent-div .header .top-nav h3, .parent-div .header .top-nav span{
+    font-size: 2rem;
+    color: var(--icons-color);
+    text-decoration: none;
+}
+
+.parent-div .header .top-nav .icons a{
+    padding-right: 1rem;
+}
+
+.parent-div .header .bottom-nav{
+    background-color:var(--some-icons);
+    display: flex;
+    align-items: center;
+    color: var(--icons-color);
+    font-size: 1.1rem;
+    padding: 0rem;
+    height: auto;
+    position: relative;
+    gap: 0rem;
+}
+
+.parent-div .header .bottom-nav span{
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+}
+
+.parent-div .header .bottom-nav div{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0; 
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bottom-nav div:hover{
+    border-bottom: .3rem solid rgb(0 168 132);
+    color: rgb(0 168 132);
+}
+/* .bottom-nav div:hover, .bottom-nav a:hover{
+    color: rgb(0 168 132);
+} */
+
+.page-container{
+    position: relative;
+    background-color: var(--body-color);
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+
+}
+.page-container img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+.page-container span{
+    font-size: 4rem;
+}
+
+
+.material-icons-two-tone{
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    color: white;
+}
+/* .page-container .message-header{
+    display: flex;
+    height: auto;
+} */
+span{
+    color: red;
+}
+
+
+
+
+
+
+@media (max-width:720px) {
+
+    
+    .web-layout{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+}
